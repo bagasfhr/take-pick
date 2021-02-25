@@ -3,49 +3,86 @@ import {
   Dimensions,
   Platform,
   ScrollView,
+  StatusBar,
   StyleSheet,
   Text,
   View,
 } from 'react-native';
 import {Banner1, Banner2, Banner3, PlanBanner} from '../../assets/images';
 import PrimaryButtonSmall from '../../components/Button/Primary/small';
-import SmallProduct from '../../components/productCard/product/small';
 import FlexBoxMenu from './FlexBoxMenu';
 import PlanWeddingBanner from './PlanWeddingBanner';
 import {BannerCarousel} from '/Users/bagasfhr/Documents/Aplikasi/TakePick/src/components';
+import product from '../../assets/data/product';
+import SmallProduct from '../../components/productCard/product/small';
 
 // const images = Image.resolveAssetSource([Banner1, Banner2, Banner3]).uri;
 // const images = {Banner1, Banner2, Banner3};
 
 const images = [
-  'https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
-  'https://images.unsplash.com/photo-1485550409059-9afb054cada4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80',
-  'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
-  'https://images.unsplash.com/photo-1429087969512-1e85aab2683d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-  'https://images.unsplash.com/photo-1505678261036-a3fcc5e884ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+  'https://images.unsplash.com/photo-1520854221256-17451cc331bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
+  'https://images.unsplash.com/photo-1519741497674-611481863552?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
+  'https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
+  'https://images.unsplash.com/photo-1550005809-91ad75fb315f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80',
+  'https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
 ];
 
-export default class Home extends Component {
-  render() {
-    return (
-      // <View style={styles.container}>
-      <View>
-        <ScrollView>
-          <BannerCarousel images={images} style={styles.banner} />
-          <FlexBoxMenu />
-          <PlanWeddingBanner />
-          <View>
-            <Text style={styles.recommendation}>Recommendation For You</Text>
-            <View style={styles.card}>
-              <SmallProduct />
-              <SmallProduct />
-            </View>
+const post1 = product[0];
+const post2 = product[1];
+
+const Home = () => {
+  return (
+    <View>
+      {/* <StatusBar translucent backgroundColor="transparent" /> */}
+      <View>{/* <SearchBar /> */}</View>
+      <ScrollView>
+        <BannerCarousel images={images} style={styles.banner} />
+        <FlexBoxMenu />
+        <PlanWeddingBanner />
+        <View>
+          <Text style={styles.recommendation}>Recommendation For You</Text>
+          <View style={styles.card}>
+            <SmallProduct post={post1} />
+            <SmallProduct post={post2} />
           </View>
-        </ScrollView>
-      </View>
-    );
-  }
-}
+          {/* <View style={styles.card}>
+              <SmallProduct />
+              <SmallProduct />
+            </View> */}
+        </View>
+      </ScrollView>
+    </View>
+  );
+};
+
+export default Home;
+
+// export default class Home extends Component {
+//   render() {
+//     return (
+//       <View>
+//         {/* <StatusBar translucent backgroundColor="transparent" /> */}
+//         <View>{/* <SearchBar /> */}</View>
+//         <ScrollView>
+//           <BannerCarousel images={images} style={styles.banner} />
+//           <FlexBoxMenu />
+//           <PlanWeddingBanner />
+//           <View>
+//             <Text style={styles.recommendation}>Recommendation For You</Text>
+//             <View style={styles.card}>
+//               <SmallProduct />
+//               {/* <SmallProduct /> */}
+//             </View>
+//             {/* <View style={styles.card}>
+//               <SmallProduct />
+//               <SmallProduct />
+//             </View> */}
+//           </View>
+//         </ScrollView>
+//       </View>
+//     );
+//   }
+// }
 
 const windowHeight = Dimensions.get('window');
 

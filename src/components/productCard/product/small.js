@@ -1,40 +1,89 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Text, StyleSheet, View, Image} from 'react-native';
-import {color} from 'react-native-reanimated';
-import {ProductSmall} from '../../../assets/images';
+// import {ProductSmall} from '../../../assets/images';
 import {Star16, Coupon16} from '../../../assets/icons';
+// import product from '../../../assets/data/product'
 
-export default class SmallProduct extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <View>
-          <Image style={styles.image} source={ProductSmall} />
-        </View>
-        <View style={styles.deal}>
-          <Text style={styles.dealText}>BEST DEAL</Text>
-        </View>
-        <View style={{flexDirection: 'row'}}>
-          <Image source={Star16} />
-          <Text style={styles.ratingLocation}>4.73 (21)</Text>
-          <Text style={styles.ratingLocation}>Bali, ID</Text>
-        </View>
-        <View>
-          <Text style={styles.titleProduct}>
-            Package Engagement Photo & Video
-          </Text>
-        </View>
-        <View style={{flexDirection: 'row'}}>
-          <Image source={Coupon16} />
-          <Text style={styles.pricePromo}>IDR 5.587.500</Text>
-        </View>
-        <View>
-          <Text style={styles.price}>IDR 5.087.500</Text>
-        </View>
+const SmallProduct = (props) => {
+  const post = props.post;
+
+  return (
+    <View style={styles.container}>
+      <View>
+        <Image style={styles.image} source={{uri: post.image}} />
       </View>
-    );
-  }
-}
+      <View style={styles.deal}>
+        <Text style={styles.dealText}>{post.type}</Text>
+      </View>
+      <View style={{flexDirection: 'row'}}>
+        <Image source={Star16} />
+        <Text style={styles.ratingLocation}>
+          {post.rating} ({post.review})
+        </Text>
+        <Text style={styles.ratingLocation}>{post.location}</Text>
+      </View>
+      <View>
+        <Text style={styles.titleProduct} numberOfLines={2}>
+          {post.title}
+        </Text>
+      </View>
+      <View style={{flexDirection: 'row'}}>
+        <Image source={Coupon16} />
+        <Text style={styles.pricePromo}>IDR {post.oldPrice}</Text>
+      </View>
+      <View>
+        <Text style={styles.price}>IDR {post.newPrice}</Text>
+      </View>
+    </View>
+  );
+};
+
+//   return (
+//     <View style={styles.container}>
+//       <View>
+//         <Image style={styles.image} source={props.image} />
+//       </View>
+//       <View style={styles.deal}>
+//         <Text style={styles.dealText}>{props.bestDeal}</Text>
+//       </View>
+//       <View style={{flexDirection: 'row'}}>
+//         <Image source={Star16} />
+//         <Text style={styles.ratingLocation}>{props.rating}</Text>
+//         <Text style={styles.ratingLocation}>{props.location}</Text>
+//       </View>
+//       <View>
+//         <Text style={styles.titleProduct} numberOfLines={2}>
+//           {props.productName}
+//         </Text>
+//       </View>
+//       <View style={{flexDirection: 'row'}}>
+//         <Image source={Coupon16} />
+//         <Text style={styles.pricePromo}>{props.pricePromo}</Text>
+//       </View>
+//       <View>
+//         <Text style={styles.price}>{props.price}</Text>
+//       </View>
+//     </View>
+//   );
+// };
+
+// const SmallProduct = () => {
+//   return (
+//     <View style={styles.container}>
+//       <Content
+//         image={ProductSmall}
+//         bestDeal="BEST DEAL"
+//         rating="4.73 (21)"
+//         location="Bali, ID"
+//         productName="Package Engagement Photo & Video"
+//         pricePromo="IDR 5.587.500"
+//         price="IDR 5.087.500"
+//       />
+//     </View>
+//   );
+// };
+
+export default SmallProduct;
 
 const styles = StyleSheet.create({
   container: {
@@ -45,6 +94,8 @@ const styles = StyleSheet.create({
   },
   image: {
     borderRadius: 8,
+    width: 160,
+    height: 160,
   },
   deal: {
     backgroundColor: '#F1887F',

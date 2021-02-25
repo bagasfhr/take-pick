@@ -1,10 +1,5 @@
 import * as React from 'react';
 import {StyleSheet, View, ScrollView, Dimensions, Image} from 'react-native';
-import {
-  Banner1,
-  Banner2,
-  Banner3,
-} from '/Users/bagasfhr/Documents/Aplikasi/TakePick/src/assets/images';
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
