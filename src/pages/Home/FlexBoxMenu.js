@@ -1,12 +1,14 @@
-import React, {Component} from 'react';
-import {Text, View, StyleSheet, Image} from 'react-native';
+import React from 'react';
+import {Text, View, StyleSheet, Image, ScrollView} from 'react-native';
 import {Category, Vendor, Article, Promo} from '../../assets/images';
 
 // const Icon = (IconCategory, IconVendor, IconArticle, IconPromo);
-
-class FlexBoxMenu extends Component {
-  render() {
-    return (
+const FlexBoxMenu = () => {
+  return (
+    <ScrollView
+      scrollEventThrottle={16}
+      horizontal={true}
+      showsHorizontalScrollIndicator={false}>
       <View style={styles.container}>
         <View style={styles.iconBox}>
           <View style={styles.icon}>
@@ -38,10 +40,16 @@ class FlexBoxMenu extends Component {
           </View>
           <Text style={styles.text}>Promo</Text>
         </View>
+        <View style={styles.iconBox}>
+          <View style={styles.icon}>
+            <Image source={Promo} />
+          </View>
+          <Text style={styles.text}>Promo</Text>
+        </View>
       </View>
-    );
-  }
-}
+    </ScrollView>
+  );
+};
 
 export default FlexBoxMenu;
 
@@ -50,7 +58,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'space-evenly',
     marginHorizontal: 16,
     marginVertical: 8,
   },

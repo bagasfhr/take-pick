@@ -14,8 +14,7 @@ export default function PrimaryButtonSmall({text, onPress}) {
 const styles = StyleSheet.create({
   button: {
     borderRadius: 8,
-    paddingVertical: 8,
-    paddingHorizontal: 8,
+    padding: 8,
     backgroundColor: '#ED675B',
   },
   buttonText: {

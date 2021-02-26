@@ -8,13 +8,15 @@ import {
   Text,
   View,
 } from 'react-native';
-import {Banner1, Banner2, Banner3, PlanBanner} from '../../assets/images';
 import PrimaryButtonSmall from '../../components/Button/Primary/small';
 import FlexBoxMenu from './FlexBoxMenu';
 import PlanWeddingBanner from './PlanWeddingBanner';
 import {BannerCarousel} from '/Users/bagasfhr/Documents/Aplikasi/TakePick/src/components';
 import product from '../../assets/data/product';
-import SmallProduct from '../../components/productCard/product/small';
+import SmallProduct from '../../components/productCard/Small';
+import Column2Cardlist from '../../components/FlatList/Column2Card';
+import Recommendation from './Recommendation';
+import ReviewClientCard from '../../screens/ReviewClientCard';
 
 // const images = Image.resolveAssetSource([Banner1, Banner2, Banner3]).uri;
 // const images = {Banner1, Banner2, Banner3};
@@ -33,56 +35,28 @@ const post2 = product[1];
 const Home = () => {
   return (
     <View>
-      {/* <StatusBar translucent backgroundColor="transparent" /> */}
-      <View>{/* <SearchBar /> */}</View>
       <ScrollView>
-        <BannerCarousel images={images} style={styles.banner} />
+        {/* <BannerCarousel images={images} style={styles.banner} />
         <FlexBoxMenu />
         <PlanWeddingBanner />
         <View>
           <Text style={styles.recommendation}>Recommendation For You</Text>
-          <View style={styles.card}>
-            <SmallProduct post={post1} />
-            <SmallProduct post={post2} />
+          <Recommendation />
+          <View style={styles.button}>
+            <PrimaryButtonSmall
+              text="View more"
+              // onPress={props.handleSubmit}
+              style={styles.buttonText}
+            />
           </View>
-          {/* <View style={styles.card}>
-              <SmallProduct />
-              <SmallProduct />
-            </View> */}
-        </View>
+        </View> */}
+        <ReviewClientCard />
       </ScrollView>
     </View>
   );
 };
 
 export default Home;
-
-// export default class Home extends Component {
-//   render() {
-//     return (
-//       <View>
-//         {/* <StatusBar translucent backgroundColor="transparent" /> */}
-//         <View>{/* <SearchBar /> */}</View>
-//         <ScrollView>
-//           <BannerCarousel images={images} style={styles.banner} />
-//           <FlexBoxMenu />
-//           <PlanWeddingBanner />
-//           <View>
-//             <Text style={styles.recommendation}>Recommendation For You</Text>
-//             <View style={styles.card}>
-//               <SmallProduct />
-//               {/* <SmallProduct /> */}
-//             </View>
-//             {/* <View style={styles.card}>
-//               <SmallProduct />
-//               <SmallProduct />
-//             </View> */}
-//           </View>
-//         </ScrollView>
-//       </View>
-//     );
-//   }
-// }
 
 const windowHeight = Dimensions.get('window');
 
@@ -96,17 +70,22 @@ const styles = StyleSheet.create({
     height: windowHeight * 0.44,
   },
   card: {
-    flexDirection: 'row',
+    flexDirection: 'column',
     justifyContent: 'space-between',
     marginHorizontal: 16,
     marginVertical: 8,
   },
   recommendation: {
     marginHorizontal: 16,
-    marginVertical: 8,
+    marginTop: 16,
     fontFamily: 'Poppins-SemiBold',
     fontSize: 14,
     lineHeight: 19.6,
     letterSpacing: 1,
+  },
+  button: {
+    marginHorizontal: 16,
+    marginTop: 16,
+    marginBottom: 8,
   },
 });

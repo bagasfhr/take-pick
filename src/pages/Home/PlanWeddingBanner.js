@@ -26,6 +26,7 @@ class PlanWeddingBanner extends Component {
             <View style={styles.button}>
               <PrimaryButtonSmall
                 text="Lets Plan"
+                padding="8"
                 // onPress={props.handleSubmit}
                 style={styles.buttonText}
               />
