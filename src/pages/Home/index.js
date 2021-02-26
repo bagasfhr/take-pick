@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <View>
       <ScrollView>
-        {/* <BannerCarousel images={images} style={styles.banner} />
+        <BannerCarousel images={images} style={styles.banner} />
         <FlexBoxMenu />
         <PlanWeddingBanner />
         <View>
@@ -49,7 +49,7 @@ const Home = () => {
               style={styles.buttonText}
             />
           </View>
-        </View> */}
+        </View>
         <ReviewClientCard />
       </ScrollView>
     </View>
