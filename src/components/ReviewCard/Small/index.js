@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
-import {AirbnbRating} from 'react-native-ratings';
+import {Rating} from 'react-native-ratings';
 
 // const {rating} = 2;
 
@@ -28,16 +28,16 @@ const ReviewSmallCard = () => {
           <View style={{marginLeft: 8, justifyContent: 'flex-start'}}>
             <Text style={styles.name}>Aisha</Text>
             <Text style={styles.date}>Sep 20, 2020</Text>
-            <Text>Star 5</Text>
-            <View>
-              {/* <AirbnbRating
-                count={11}
-                reviews={['Terrible', 'Bad']}
-                defaultRating={11}
-                size={20}
+            <Text style={{width: 20}}>
+              <Rating
+                showRating
+                ratingCount={5}
+                ratingColor="F9CCC8"
+                imageSize={16}
+                // onFinishRating={this.ratingCompleted}
+                // style={{paddingVertical: 10}}
               />
-              ; */}
-            </View>
+            </Text>
           </View>
         </View>
         <View>

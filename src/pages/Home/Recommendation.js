@@ -8,6 +8,8 @@ const post1 = product[0];
 const post2 = product[1];
 const post3 = product[2];
 const post4 = product[3];
+const post5 = product[4];
+const post6 = product[5];
 
 const Recommendation = () => {
   return (
@@ -16,10 +18,10 @@ const Recommendation = () => {
       <SmallProduct post={post2} />
       <SmallProduct post={post3} />
       <SmallProduct post={post4} />
-      <SmallProduct post={post1} />
-      <SmallProduct post={post2} />
-      <SmallProduct post={post3} />
-      <SmallProduct post={post4} />
+      <SmallProduct post={post5} />
+      <SmallProduct post={post6} />
+      {/* <SmallProduct post={post3} />
+      <SmallProduct post={post4} /> */}
     </View>
   );
 };

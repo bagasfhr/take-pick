@@ -17,6 +17,7 @@ import SmallProduct from '../../components/productCard/Small';
 import Column2Cardlist from '../../components/FlatList/Column2Card';
 import Recommendation from './Recommendation';
 import ReviewClientCard from '../../screens/ReviewClientCard';
+// import Subtitle2 from '../../utils/constant';
 
 // const images = Image.resolveAssetSource([Banner1, Banner2, Banner3]).uri;
 // const images = {Banner1, Banner2, Banner3};
@@ -79,6 +80,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
     marginTop: 16,
     fontFamily: 'Poppins-SemiBold',
+    // fontFamily: Subtitle2,
     fontSize: 14,
     lineHeight: 19.6,
     letterSpacing: 1,
