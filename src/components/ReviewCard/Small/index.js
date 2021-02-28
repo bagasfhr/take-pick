@@ -28,7 +28,7 @@ const ReviewSmallCard = () => {
           <View style={{marginLeft: 8, justifyContent: 'flex-start'}}>
             <Text style={styles.name}>Aisha</Text>
             <Text style={styles.date}>Sep 20, 2020</Text>
-            <Text style={{width: 20}}>
+            {/* <Text style={{width: 20}}>
               <Rating
                 showRating
                 ratingCount={5}
@@ -37,7 +37,7 @@ const ReviewSmallCard = () => {
                 // onFinishRating={this.ratingCompleted}
                 // style={{paddingVertical: 10}}
               />
-            </Text>
+            </Text> */}
           </View>
         </View>
         <View>
