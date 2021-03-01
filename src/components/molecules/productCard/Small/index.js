@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, StyleSheet, View, Image, Dimensions} from 'react-native';
-import {Star16, Coupon16} from '../../../assets/icons';
+import {Star16, Coupon16} from '../../../../assets/icons';
 // import product from '../../../assets/data/product'
 
 const {height, width} = Dimensions.get('window');

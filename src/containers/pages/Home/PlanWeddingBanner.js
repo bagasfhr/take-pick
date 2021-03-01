@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet, Image, ImageBackground} from 'react-native';
-import PlanBanner from '../../assets/images/PlanWeddingBanner.png';
+import PlanBanner from '../../../assets/images/PlanWeddingBanner.png';
 import LinearGradient from 'react-native-linear-gradient';
-import PrimaryButtonSmall from '../../components/Button/Primary/small';
+import PrimaryButtonSmall from '../../../components/atoms/Button/Primary';
 
 const PlanBannerUri = Image.resolveAssetSource(PlanBanner).uri;
 

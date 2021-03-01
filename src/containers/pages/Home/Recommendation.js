@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View, FlatList} from 'react-native';
-import product from '../../assets/data/product';
-import SmallProduct from '../../components/productCard/Small';
+import product from '../../../assets/data/product';
+import SmallProduct from '../../../components/molecules/productCard/Small';
 // import Column2Cardlist from '../../components/FlatList/Column2Card';
 
 const post1 = product[0];

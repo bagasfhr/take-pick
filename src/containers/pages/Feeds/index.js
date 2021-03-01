@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View, Button} from 'react-native';
 import {TextInput} from 'react-native-gesture-handler';
-import LocalAPI from '../../components/LocalAPI';
+import LocalAPI from '../../../components/molecules/LocalAPI';
 
 const Feeds = () => {
   return (

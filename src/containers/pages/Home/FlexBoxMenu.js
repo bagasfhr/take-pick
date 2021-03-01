@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, View, StyleSheet, Image, ScrollView} from 'react-native';
-import {Category, Vendor, Article, Promo} from '../../assets/images';
+import {Category, Vendor, Article, Promo} from '../../../assets/images';
 
 // const Icon = (IconCategory, IconVendor, IconArticle, IconPromo);
 const FlexBoxMenu = () => {

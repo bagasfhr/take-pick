@@ -11,8 +11,8 @@ import {
   IconOrganizedActive,
   IconProfile,
   IconProfileActive,
-} from '../../assets';
-import {Primary_70, Grey_60} from '../../utils/constant';
+} from '../../../assets';
+import {Primary_70, Grey_60} from '../../../utils/constant';
 
 const TabItem = ({isFocused, onPress, onLongPress, label}) => {
   const Icon = () => {

@@ -1,8 +1,8 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import Router from './router';
-import TestPage from './TestPage';
+import Router from './config/router';
+import TestPage from './testPage';
 
 const App = () => {
   return (

@@ -8,15 +8,13 @@ import {
   Text,
   View,
 } from 'react-native';
-import PrimaryButtonSmall from '../../components/Button/Primary/small';
+import PrimaryButtonSmall from '../../../components/atoms/Button/Primary';
 import FlexBoxMenu from './FlexBoxMenu';
 import PlanWeddingBanner from './PlanWeddingBanner';
 import {BannerCarousel} from '/Users/bagasfhr/Documents/Aplikasi/TakePick/src/components';
-import product from '../../assets/data/product';
-import SmallProduct from '../../components/productCard/Small';
-import Column2Cardlist from '../../components/FlatList/Column2Card';
+import product from '../../../assets/data/product';
 import Recommendation from './Recommendation';
-import ReviewClientCard from '../../screens/ReviewClientCard';
+import ReviewClientCard from '../../organism/ReviewClientCard';
 // import Subtitle2 from '../../utils/constant';
 
 // const images = Image.resolveAssetSource([Banner1, Banner2, Banner3]).uri;

@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View, FlatList} from 'react-native';
 import product from '../../../assets/data/product';
-import Recommendation from '../../../pages/Home/Recommendation';
+import Recommendation from '../../../containers/pages/Home/Recommendation';
 import SmallProduct from '../../productCard/Small';
 
 const Column2Cardlist = (props) => {

@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {ImageBackground, StyleSheet, Text, View, Image} from 'react-native';
-import {BackgroundSplash, Logo} from '../../assets/images';
+import {BackgroundSplash, Logo} from '../../../assets/images';
 
 const Splash = ({navigation}) => {
   useEffect(() => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import {ReviewSmallCard} from '../../components/ReviewCard';
+import {ReviewSmallCard} from '../../../components/molecules/ReviewCard';
 
 const ReviewClientCard = () => {
   return (
