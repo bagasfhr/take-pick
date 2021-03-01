@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
-const Vendor = () => {
+const VendorPage = () => {
   return (
     <View>
       <Text>Vendor</Text>
@@ -9,6 +9,6 @@ const Vendor = () => {
   );
 };
 
-export default Vendor;
+export default VendorPage;
 
 const styles = StyleSheet.create({});

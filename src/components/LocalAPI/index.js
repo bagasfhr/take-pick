@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React, {useState, useEffect} from 'react';
 import {StyleSheet, Text, View, Button, Image} from 'react-native';
 import {TextInput} from 'react-native-gesture-handler';
