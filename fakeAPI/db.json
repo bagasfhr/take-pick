@@ -111,10 +111,30 @@
       "rating": "4.22",
       "review": "5",
       "location": "Jakarta",
-      "title": "PWedding Planning - In Jakarta",
+      "title": "Prewedding Planning - In Jakarta",
       "oldPrice": "30.000.000",
       "newPrice": "27.750.000",
       "id": 6
+    }
+  ],
+  "reviews": [
+    {
+      "avatar": "https://images.unsplash.com/photo-1515130166460-532bc0777f50?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8dG93SlpGc2twR2d8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "name": "Aisha",
+      "day": "20",
+      "month": "Sep",
+      "year": "2020",
+      "caption": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium",
+      "id": 1
+    },
+    {
+      "avatar": "https://images.unsplash.com/photo-1614676367564-32341390913f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "name": "Sumiati",
+      "day": "12",
+      "month": "Aug",
+      "year": "2019",
+      "caption": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et",
+      "id": 2
     }
   ]
 }
