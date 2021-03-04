@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
 import {Rating} from 'react-native-ratings';
+import StarRating from '../../../atoms/Rating';
 
 // const {rating} = 2;
 
@@ -28,16 +29,17 @@ const ReviewSmallCard = () => {
           <View style={{marginLeft: 8, justifyContent: 'flex-start'}}>
             <Text style={styles.name}>Aisha</Text>
             <Text style={styles.date}>Sep 20, 2020</Text>
-            {/* <Text style={{width: 20}}>
-              <Rating
+            {/* <StarRating number={5} views={2} /> */}
+            <Text style={{width: 20}}>
+              {/* <Rating
                 showRating
                 ratingCount={5}
-                ratingColor="F9CCC8"
+                ratingColor="#F9CCC8"
                 imageSize={16}
-                // onFinishRating={this.ratingCompleted}
+                readonly={true}
                 // style={{paddingVertical: 10}}
-              />
-            </Text> */}
+              /> */}
+            </Text>
           </View>
         </View>
         <View>

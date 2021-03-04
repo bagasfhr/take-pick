@@ -14,6 +14,7 @@ import IconPromo from './IconPromo.svg';
 import IconVendor from './IconVendor.svg';
 import Star16 from './Star16.png';
 import Coupon16 from './Coupon16.png';
+import blueprint from './blueprint.png';
 
 export {
   IconFeeds,
@@ -32,4 +33,5 @@ export {
   IconVendor,
   Star16,
   Coupon16,
+  blueprint,
 };

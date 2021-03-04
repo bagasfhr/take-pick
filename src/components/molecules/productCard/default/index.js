@@ -4,13 +4,20 @@ import {Star16, Coupon16} from '../../../../assets/icons';
 
 const {height, width} = Dimensions.get('window');
 
-const SmallProduct = (props) => {
-  const post = props.post;
-
+const ProductCardDefault = ({
+  avatar,
+  type,
+  rating,
+  review,
+  location,
+  title,
+  oldPrice,
+  newPrice,
+}) => {
   return (
     <View style={styles.container}>
       <View style={{flex: 1}}>
-        <Image style={styles.image} source={{uri: post.image}} />
+        <Image style={styles.image} source={{uri: avatar}} />
       </View>
       <View
         style={{
@@ -19,46 +26,36 @@ const SmallProduct = (props) => {
           justifyContent: 'space-evenly',
         }}>
         <View style={styles.deal}>
-          <Text style={styles.dealText}>{post.type}</Text>
+          <Text style={styles.dealText}>{type}</Text>
         </View>
         <View style={{flexDirection: 'row'}}>
           <Image source={Star16} />
           <Text style={styles.ratingLocation}>
-            {post.rating} ({post.review})
+            {rating} ({review})
           </Text>
-          <Text style={styles.ratingLocation}>{post.location}</Text>
+          <Text style={styles.ratingLocation}>{location}</Text>
         </View>
         <View>
           <Text style={styles.titleProduct} numberOfLines={2}>
-            {post.title}
+            {title}
           </Text>
         </View>
         <View style={{flexDirection: 'row'}}>
           <Image source={Coupon16} />
-          <Text style={styles.pricePromo}>IDR {post.oldPrice}</Text>
+          <Text style={styles.pricePromo}>IDR {oldPrice}</Text>
         </View>
         <View>
-          <Text style={styles.price}>IDR {post.newPrice}</Text>
+          <Text style={styles.price}>IDR {newPrice}</Text>
         </View>
       </View>
+      {/* <Button title="Update" onPress={getData} /> */}
     </View>
   );
 };
 
-export default SmallProduct;
+export default ProductCardDefault;
 
 const styles = StyleSheet.create({
-  // container: {
-  //   width: 160,
-  //   height: 306,
-  //   flexDirection: 'column',
-  //   justifyContent: 'space-between',
-  // },
-  // image: {
-  //   borderRadius: 8,
-  //   width: 160,
-  //   height: 160,
-  // },
   container: {
     width: width / 2 - 20,
     height: height / 2 - 20,

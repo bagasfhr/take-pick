@@ -13,8 +13,8 @@ import FlexBoxMenu from './FlexBoxMenu';
 import PlanWeddingBanner from './PlanWeddingBanner';
 import {BannerCarousel} from '/Users/bagasfhr/Documents/Aplikasi/TakePick/src/components';
 import product from '../../../assets/data/product';
-import Recommendation from './Recommendation';
 import ReviewClientCard from '../../organism/ReviewClientCard';
+import RecommendationPost from '../../organism/RecommendationPost';
 // import Subtitle2 from '../../utils/constant';
 
 // const images = Image.resolveAssetSource([Banner1, Banner2, Banner3]).uri;
@@ -40,7 +40,7 @@ const Home = () => {
         <PlanWeddingBanner />
         <View>
           <Text style={styles.recommendation}>Recommendation For You</Text>
-          <Recommendation />
+          <RecommendationPost />
           <View style={styles.button}>
             <PrimaryButtonSmall
               text="View more"

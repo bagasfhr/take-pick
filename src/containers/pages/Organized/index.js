@@ -5,8 +5,8 @@ import SnapCaousel from '../../templates/SnapCarousel';
 const Organized = () => {
   return (
     <View>
-      {/* <Text>Organized</Text> */}
-      <SnapCaousel />
+      <Text>Organized</Text>
+      {/* <SnapCaousel /> */}
       {/* <AssetExample /> */}
     </View>
   );
