@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
+import Primary_70 from '../../../../utils/constant';
 
 export default function PrimaryButtonSmall({text, onPress}) {
   return (

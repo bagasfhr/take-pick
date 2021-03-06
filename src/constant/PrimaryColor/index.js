@@ -1,0 +1,10 @@
+export const Primary_10 = '#F9CCC8';
+export const Primary_20 = '#F7BBB6';
+export const Primary_30 = '#F5AAA3';
+export const Primary_40 = '#F39991';
+export const Primary_50 = '#F1887F';
+export const Primary_60 = '#EF776D';
+export const Primary_70 = '#ED675B';
+export const Primary_80 = '#D25B50';
+export const Primary_90 = '#B85046';
+export const Primary_100 = '#9E443C';
