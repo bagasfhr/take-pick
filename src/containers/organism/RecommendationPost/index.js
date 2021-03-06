@@ -1,7 +1,7 @@
 import Axios from 'axios';
 import React, {useEffect, useState} from 'react';
 import {ScrollView, View, StyleSheet} from 'react-native';
-import ProductCardDefault from '../../../components/molecules/productCard/default';
+import ProductCardDefault from '../../../components/molecules/ProductCard/default';
 
 const TestPage = () => {
   const [products, setProducts] = useState([]);

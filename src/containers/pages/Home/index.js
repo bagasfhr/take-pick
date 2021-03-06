@@ -9,12 +9,12 @@ import {
   View,
 } from 'react-native';
 import PrimaryButtonSmall from '../../../components/atoms/Button/Primary';
-import FlexBoxMenu from './FlexBoxMenu';
-import PlanWeddingBanner from './PlanWeddingBanner';
 import {BannerCarousel} from '/Users/bagasfhr/Documents/Aplikasi/TakePick/src/components';
 import product from '../../../assets/data/product';
 import ReviewClientCard from '../../organism/ReviewClientCard';
 import RecommendationPost from '../../organism/RecommendationPost';
+import MenuBar from '../../organism/MenuBar';
+import PlanWeddingBanner from '../../organism/PlanWeddingBanner';
 // import Subtitle2 from '../../utils/constant';
 
 // const images = Image.resolveAssetSource([Banner1, Banner2, Banner3]).uri;
@@ -36,7 +36,7 @@ const Home = () => {
     <View>
       <ScrollView>
         <BannerCarousel images={images} style={styles.banner} />
-        <FlexBoxMenu />
+        <MenuBar />
         <PlanWeddingBanner />
         <View>
           <Text style={styles.recommendation}>Recommendation For You</Text>

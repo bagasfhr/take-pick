@@ -3,7 +3,7 @@ import {Text, View, StyleSheet, Image, ScrollView} from 'react-native';
 import {Category, Vendor, Article, Promo} from '../../../assets/images';
 
 // const Icon = (IconCategory, IconVendor, IconArticle, IconPromo);
-const FlexBoxMenu = () => {
+const MenuBar = () => {
   return (
     <ScrollView
       scrollEventThrottle={16}
@@ -51,7 +51,7 @@ const FlexBoxMenu = () => {
   );
 };
 
-export default FlexBoxMenu;
+export default MenuBar;
 
 const styles = StyleSheet.create({
   container: {
