@@ -28,7 +28,7 @@ const ProductCardSmall = ({
         <View style={styles.deal}>
           <Text style={styles.dealText}>{type}</Text>
         </View>
-        <View style={{flexDirection: 'row'}}>
+        <View style={styles.ratingLocationContainer}>
           <Image source={Star16} />
           <Text style={styles.ratingLocation}>
             {rating} ({review})
@@ -40,7 +40,11 @@ const ProductCardSmall = ({
             {title}
           </Text>
         </View>
-        <View style={{flexDirection: 'row'}}>
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+          }}>
           <Image source={Coupon16} />
           <Text style={styles.pricePromo}>IDR {oldPrice}</Text>
         </View>
@@ -57,8 +61,9 @@ export default ProductCardSmall;
 
 const styles = StyleSheet.create({
   container: {
-    width: width / 2 - 20,
-    height: height / 2 - 20,
+    width: width / 2 - 12,
+    height: height / 2,
+    marginBottom: 16,
   },
   image: {
     flex: 1,
@@ -69,16 +74,22 @@ const styles = StyleSheet.create({
   },
   deal: {
     backgroundColor: '#F1887F',
-    width: 85,
+    paddingHorizontal: 4,
     height: 17,
     borderRadius: 4,
     alignItems: 'center',
+    marginTop: 8,
   },
   dealText: {
-    fontFamily: 'Roboto-Bold',
+    fontFamily: 'Roboto-Medium',
     fontSize: 12,
     color: '#FFF',
     letterSpacing: 1,
+    lineHeight: 16.8,
+  },
+  ratingLocationContainer: {
+    flexDirection: 'row',
+    marginTop: 8,
   },
   ratingLocation: {
     fontFamily: 'Roboto-Regular',
@@ -91,6 +102,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Regular',
     fontSize: 12,
     lineHeight: 16.8,
+    marginTop: 8,
   },
   pricePromo: {
     fontFamily: 'Roboto-Regular',
@@ -98,10 +110,12 @@ const styles = StyleSheet.create({
     textDecorationLine: 'line-through',
     letterSpacing: 1,
     paddingLeft: 4,
+    marginTop: 8,
   },
   price: {
     fontFamily: 'Roboto-Bold',
     fontSize: 16,
     letterSpacing: 1,
+    marginTop: 8,
   },
 });

@@ -66,20 +66,20 @@ const styles = StyleSheet.create({
   },
   cardContainer: {
     flexDirection: 'row',
-    flexWrap: 'wrap',
     alignContent: 'space-around',
-    marginLeft: 16,
+    flexWrap: 'wrap',
   },
   titleContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginHorizontal: 16,
+    marginHorizontal: 8,
     marginBottom: 16,
     alignItems: 'center',
   },
   title: {
     fontFamily: 'Poppins-SemiBold',
     fontSize: 14,
+    lineHeight: 19.6,
   },
   buttonText: {
     fontFamily: 'Poppins-Medium',

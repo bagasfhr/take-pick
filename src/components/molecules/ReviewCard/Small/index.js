@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FEFEFE',
     borderRadius: 8,
     padding: 8,
-    marginRight: 8,
+    marginLeft: 8,
   },
   image: {
     width: 40,
@@ -68,5 +68,6 @@ const styles = StyleSheet.create({
     fontFamily: 'Roboto-Regular',
     fontSize: 12,
     letterSpacing: 1,
+    lineHeight: 16.8,
   },
 });

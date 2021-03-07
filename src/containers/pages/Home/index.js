@@ -36,7 +36,6 @@ const Home = () => {
         <MenuBar />
         <PlanWeddingBanner />
         <View>
-          <Text style={styles.recommendation}>Recommendation For You</Text>
           <RecommendationPost />
           <View style={styles.button}>
             <PrimaryButtonSmall
