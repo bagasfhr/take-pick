@@ -15,7 +15,7 @@ class PlanWeddingBanner extends Component {
           style={styles.banner}
           imageStyle={styles.image}>
           <LinearGradient
-            colors={['rgba(82,87,92,0.5)', '#rgba(249,204,200,0.5)']}
+            colors={['rgba(82,87,92,0.3)', 'rgba(249,204,200,0.3)']}
             style={styles.linearGradient}>
             <View style={styles.text}>
               <Text style={styles.title}>Plan Your Wedding with Us</Text>

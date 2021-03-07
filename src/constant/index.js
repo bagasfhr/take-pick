@@ -1,3 +1,1 @@
-export * from './BlackColor';
-export * from './PrimaryColor';
-export * from './SecondaryColor';
+export * from './Colors';

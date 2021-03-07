@@ -1,9 +1,9 @@
 import Axios from 'axios';
 import React, {useEffect, useState} from 'react';
 import {ScrollView, View, StyleSheet} from 'react-native';
-import ProductCardDefault from '../../../components/molecules/ProductCard/default';
+import ProductCardSmall from '../../../components/molecules/ProductCard/Small';
 
-const TestPage = () => {
+const RecommendationPost = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const TestPage = () => {
       <View style={styles.container}>
         {products.map((product) => {
           return (
-            <ProductCardDefault
+            <ProductCardSmall
               key={product.id}
               avatar={product.avatar}
               type={product.type}
@@ -39,7 +39,7 @@ const TestPage = () => {
   );
 };
 
-export default TestPage;
+export default RecommendationPost;
 
 const styles = StyleSheet.create({
   container: {

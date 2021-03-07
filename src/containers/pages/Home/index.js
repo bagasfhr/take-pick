@@ -10,11 +10,11 @@ import {
 } from 'react-native';
 import PrimaryButtonSmall from '../../../components/atoms/Button/Primary';
 import {BannerCarousel} from '/Users/bagasfhr/Documents/Aplikasi/TakePick/src/components';
-import product from '../../../assets/data/product';
 import ReviewClientCard from '../../organism/ReviewClientCard';
 import RecommendationPost from '../../organism/RecommendationPost';
 import MenuBar from '../../organism/MenuBar';
 import PlanWeddingBanner from '../../organism/PlanWeddingBanner';
+import VendorForYou from '../../organism/VendorForYou';
 // import Subtitle2 from '../../utils/constant';
 
 // const images = Image.resolveAssetSource([Banner1, Banner2, Banner3]).uri;
@@ -27,9 +27,6 @@ const images = [
   'https://images.unsplash.com/photo-1550005809-91ad75fb315f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80',
   'https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
 ];
-
-const post1 = product[0];
-const post2 = product[1];
 
 const Home = () => {
   return (
@@ -50,6 +47,7 @@ const Home = () => {
           </View>
         </View>
         <ReviewClientCard />
+        <VendorForYou />
       </ScrollView>
     </View>
   );

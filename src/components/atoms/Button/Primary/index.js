@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
-import Primary_70 from '../../../../utils/constant';
+import Color from '../../../../constant/Colors';
 
 export default function PrimaryButtonSmall({text, onPress}) {
   return (
@@ -16,10 +16,10 @@ const styles = StyleSheet.create({
   button: {
     borderRadius: 8,
     padding: 8,
-    backgroundColor: '#ED675B',
+    backgroundColor: Color.Primary_70,
   },
   buttonText: {
-    color: '#fff',
+    color: Color.Black_5,
     fontFamily: 'Poppins-Medium',
     fontSize: 14,
     textAlign: 'center',

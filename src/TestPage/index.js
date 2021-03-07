@@ -1,7 +1,7 @@
 import Axios from 'axios';
 import React, {useEffect, useState} from 'react';
 import {ScrollView, View, StyleSheet} from 'react-native';
-import ProductCardDefault from '../components/molecules/ProductCard/default';
+import ProductCardSmall from '../components/molecules/ProductCard/Small';
 
 const TestPage = () => {
   const [products, setProducts] = useState([]);
@@ -21,7 +21,7 @@ const TestPage = () => {
       <View style={styles.container}>
         {products.map((product) => {
           return (
-            <ProductCardDefault
+            <ProductCardSmall
               key={product.id}
               avatar={product.avatar}
               type={product.type}
