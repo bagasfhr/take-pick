@@ -1,11 +1,20 @@
 import React, {Component} from 'react';
-import {Text, View, StyleSheet, Image, ImageBackground} from 'react-native';
+import {
+  Text,
+  View,
+  StyleSheet,
+  Image,
+  ImageBackground,
+  Dimensions,
+} from 'react-native';
 import PlanBanner from '../../../assets/images/PlanWeddingBanner.png';
 import LinearGradient from 'react-native-linear-gradient';
-import IconLeftRight from '../../../components/atoms/Button/IconLeftRight';
+import ButtonStyle from '../../../constant/Buttons/index';
+import CustomButton from '../../../components/atoms/Button';
 
 const PlanBannerUri = Image.resolveAssetSource(PlanBanner).uri;
 
+const {width} = Dimensions.get('window');
 class PlanWeddingBanner extends Component {
   render() {
     return (
@@ -24,11 +33,12 @@ class PlanWeddingBanner extends Component {
               </Text>
             </View>
             <View style={styles.button}>
-              <IconLeftRight
-                text="Lets Plan"
-                padding="8"
-                // onPress={props.handleSubmit}
-                style={styles.buttonText}
+              <CustomButton
+                text="Let's plan"
+                buttonType={ButtonStyle.primarySmallFlex}
+                buttonText={ButtonStyle.defaultText}
+                iconRight={'chevron-right'}
+                iconColor={ButtonStyle.defaultIcon}
               />
             </View>
           </LinearGradient>
@@ -44,6 +54,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
+    padding: 8,
+    backgroundColor: 'white',
   },
   image: {
     flex: 1,
@@ -56,7 +68,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   banner: {
-    width: 328,
+    width: width / 1 - 16,
     height: 210,
   },
   title: {
@@ -83,7 +95,8 @@ const styles = StyleSheet.create({
   //   marginRight: 16,
   // },
   button: {
-    marginLeft: 216,
+    alignItems: 'flex-end',
+    // marginLeft: 216,
     marginRight: 16,
     marginBottom: 16,
   },

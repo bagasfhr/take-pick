@@ -1,5 +1,12 @@
 import React from 'react';
-import {Text, StyleSheet, View, Image, Dimensions} from 'react-native';
+import {
+  Text,
+  StyleSheet,
+  View,
+  Image,
+  Dimensions,
+  TouchableOpacity,
+} from 'react-native';
 import {Star16, Coupon16} from '../../../../assets/icons';
 
 const {height, width} = Dimensions.get('window');
@@ -13,47 +20,50 @@ const ProductCardSmall = ({
   title,
   oldPrice,
   newPrice,
+  onPress,
 }) => {
   return (
-    <View style={styles.container}>
-      <View style={{flex: 1}}>
-        <Image style={styles.image} source={{uri: avatar}} />
-      </View>
-      <View
-        style={{
-          flex: 1,
-          alignItems: 'flex-start',
-          justifyContent: 'space-evenly',
-        }}>
-        <View style={styles.deal}>
-          <Text style={styles.dealText}>{type}</Text>
-        </View>
-        <View style={styles.ratingLocationContainer}>
-          <Image source={Star16} />
-          <Text style={styles.ratingLocation}>
-            {rating} ({review})
-          </Text>
-          <Text style={styles.ratingLocation}>{location}</Text>
-        </View>
-        <View>
-          <Text style={styles.titleProduct} numberOfLines={2}>
-            {title}
-          </Text>
+    <TouchableOpacity onPress={onPress}>
+      <View style={styles.container}>
+        <View style={{flex: 1}}>
+          <Image style={styles.image} source={{uri: avatar}} />
         </View>
         <View
           style={{
-            flexDirection: 'row',
-            alignItems: 'center',
+            flex: 1,
+            alignItems: 'flex-start',
+            justifyContent: 'space-evenly',
           }}>
-          <Image source={Coupon16} />
-          <Text style={styles.pricePromo}>IDR {oldPrice}</Text>
+          <View style={styles.deal}>
+            <Text style={styles.dealText}>{type}</Text>
+          </View>
+          <View style={styles.ratingLocationContainer}>
+            <Image source={Star16} />
+            <Text style={styles.ratingLocation}>
+              {rating} ({review})
+            </Text>
+            <Text style={styles.ratingLocation}>{location}</Text>
+          </View>
+          <View>
+            <Text style={styles.titleProduct} numberOfLines={2}>
+              {title}
+            </Text>
+          </View>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+            }}>
+            <Image source={Coupon16} />
+            <Text style={styles.pricePromo}>IDR {oldPrice}</Text>
+          </View>
+          <View>
+            <Text style={styles.price}>IDR {newPrice}</Text>
+          </View>
         </View>
-        <View>
-          <Text style={styles.price}>IDR {newPrice}</Text>
-        </View>
+        {/* <Button title="Update" onPress={getData} /> */}
       </View>
-      {/* <Button title="Update" onPress={getData} /> */}
-    </View>
+    </TouchableOpacity>
   );
 };
 

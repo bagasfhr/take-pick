@@ -59,8 +59,8 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'space-evenly',
-    marginHorizontal: 16,
-    marginVertical: 8,
+    padding: 8,
+    backgroundColor: 'white',
   },
   iconBox: {
     width: 64,

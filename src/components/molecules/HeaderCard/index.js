@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     lineHeight: 20,
     color: Colors.Black_100,
+    letterSpacing: 1,
   },
   buttonText: {
     fontFamily: 'Poppins-Medium',

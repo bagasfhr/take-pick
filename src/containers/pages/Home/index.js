@@ -35,16 +35,7 @@ const Home = () => {
         <BannerCarousel images={images} style={styles.banner} />
         <MenuBar />
         <PlanWeddingBanner />
-        <View>
-          <RecommendationPost />
-          <View style={styles.button}>
-            <IconLeftRight
-              text="View more"
-              // onPress={props.handleSubmit}
-              style={styles.buttonText}
-            />
-          </View>
-        </View>
+        <RecommendationPost />
         <ReviewClientCard />
         <VendorForYou />
       </ScrollView>

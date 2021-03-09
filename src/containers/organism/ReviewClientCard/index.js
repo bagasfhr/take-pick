@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react';
 import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import {ReviewSmallCard} from '../../../components/molecules/ReviewCard';
 import LinearGradient from 'react-native-linear-gradient';
+import HeaderCard from '../../../components/molecules/HeaderCard';
 
 const ReviewClientCard = () => {
   const [reviews, setReviews] = useState([]);
@@ -26,8 +27,7 @@ const ReviewClientCard = () => {
       style={styles.linearGradient}>
       <View style={styles.container}>
         <View style={styles.titleContainer}>
-          <Text style={styles.title}>Review from client</Text>
-          <Text style={styles.buttonText}>See all</Text>
+          <HeaderCard title="Review from client" button="See all" />
         </View>
         <ScrollView
           horizontal={true}
@@ -60,9 +60,10 @@ export default ReviewClientCard;
 const styles = StyleSheet.create({
   linearGradient: {
     width: '100%',
+    paddingVertical: 8,
   },
   container: {
-    marginVertical: 8,
+    // marginVertical: 8,
   },
   cardContainer: {
     flexDirection: 'row',
@@ -70,11 +71,9 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
   },
   titleContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
     marginHorizontal: 8,
-    marginBottom: 16,
-    alignItems: 'center',
+    // marginBottom: 16,
+    // alignItems: 'center',
   },
   title: {
     fontFamily: 'Poppins-SemiBold',

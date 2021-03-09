@@ -7,8 +7,8 @@ import TestPage from './testPage';
 const App = () => {
   return (
     <NavigationContainer>
-      {/* <Router /> */}
-      <TestPage />
+      <Router />
+      {/* <TestPage /> */}
     </NavigationContainer>
   );
 };

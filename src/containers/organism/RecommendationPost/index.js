@@ -1,7 +1,11 @@
 import Axios from 'axios';
 import React, {useEffect, useState} from 'react';
 import {ScrollView, View, StyleSheet, Text} from 'react-native';
+import CustomButton from '../../../components/atoms/Button';
+import HeaderCard from '../../../components/molecules/HeaderCard';
 import ProductCardSmall from '../../../components/molecules/ProductCard/Small';
+import ButtonStyle from '../../../constant/Buttons/index';
+import VendorPage from '../../pages/Vendor';
 
 const RecommendationPost = () => {
   const [products, setProducts] = useState([]);
@@ -18,9 +22,7 @@ const RecommendationPost = () => {
   };
   return (
     <View style={styles.container}>
-      <View style={styles.titleContainer}>
-        <Text style={styles.title}>Recommendation For You</Text>
-      </View>
+      <HeaderCard title="Recommendation for You" />
       <ScrollView>
         <View style={styles.cardContainer}>
           {products.map((product) => {
@@ -35,10 +37,16 @@ const RecommendationPost = () => {
                 title={product.title}
                 oldPrice={product.oldPrice}
                 newPrice={product.newPrice}
+                // onPress={VendorPage}
               />
             );
           })}
         </View>
+        <CustomButton
+          text="See all"
+          buttonType={ButtonStyle.outlinePrimaryLargeFull}
+          buttonText={ButtonStyle.primaryText}
+        />
       </ScrollView>
     </View>
   );
@@ -48,8 +56,8 @@ export default RecommendationPost;
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 16,
-    paddingHorizontal: 8,
+    padding: 8,
+    backgroundColor: 'white',
   },
   titleContainer: {
     flexDirection: 'row',

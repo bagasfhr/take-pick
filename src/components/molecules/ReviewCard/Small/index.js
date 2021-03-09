@@ -1,8 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image, Dimensions} from 'react-native';
-import {Rating} from 'react-native-ratings';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import RatingAtoms from '../../../atoms/Rating';
+import CardSize from '../../../../constant/CardSize';
 
 const {height, width} = Dimensions.get('window');
 
@@ -10,7 +9,7 @@ const ReviewSmallCard = ({avatar, name, day, month, year, caption}) => {
   return (
     // Wrapper Container
     <View>
-      <View style={styles.container}>
+      <View style={CardSize.medium}>
         <View style={{flex: 1, flexDirection: 'row'}}>
           <Image style={styles.image} source={{uri: avatar}} />
           <View style={styles.titleContainer}>
