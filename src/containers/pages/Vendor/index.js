@@ -4,6 +4,8 @@ import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import DescriptionVendor from '../../organism/DescriptionVendor';
+import LocationVendorCard from '../../organism/LocationVendorCard';
 import ProfileVendorLarge from '../../organism/ProfileVendorLarge';
 import SpecialButtonVendor from '../../organism/SpecialButtonVendor';
 
@@ -13,71 +15,8 @@ const VendorPage = () => {
       <View>
         <ProfileVendorLarge />
         <SpecialButtonVendor />
-        <View
-          style={{
-            marginHorizontal: 16,
-            marginVertical: 8,
-            flex: 1,
-            flexWrap: 'wrap',
-            // borderWidth: 1,
-            // borderColor: 'lightgrey',
-            // borderRadius: 8,
-          }}>
-          <View>
-            <Text
-              style={{
-                fontFamily: 'Poppins-SemiBold',
-                fontSize: 14,
-              }}>
-              About
-            </Text>
-          </View>
-          <View>
-            <Text
-              style={{
-                fontFamily: 'Roboto-Bold',
-                fontSize: 12,
-                letterSpacing: 1,
-              }}>
-              TITLE DESCRIPTION
-            </Text>
-            <Text
-              style={{
-                fontFamily: 'Roboto-Regular',
-                fontSize: 12,
-                letterSpacing: 1,
-              }}
-              numberOfLines={3}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nascetur
-              amet scelerisque eleifend pharetra nisl morbi phasellus. Cras
-              felis nibh egestas faucibus lorem...
-            </Text>
-          </View>
-        </View>
-        <View
-          style={{
-            marginHorizontal: 16,
-            marginVertical: 8,
-            flex: 1,
-            flexWrap: 'wrap',
-            // borderWidth: 1,
-            // borderColor: 'lightgrey',
-            // borderRadius: 8,
-          }}>
-          <Text
-            style={{
-              fontFamily: 'Poppins-SemiBold',
-              fontSize: 14,
-              marginBottom: 8,
-            }}>
-            Location
-          </Text>
-          <Image
-            source={require('../../../assets/icons/Maps.png')}
-            style={{flex: 1, marginBottom: 16}}
-          />
-          <Text>Depok, West Java. Indonesia</Text>
-        </View>
+        <DescriptionVendor />
+        <LocationVendorCard />
         <LinearGradient
           colors={['rgba(249,204,200,0.2)', '#rgba(255,255,255,1)']}>
           <View

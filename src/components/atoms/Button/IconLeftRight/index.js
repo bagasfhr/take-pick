@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-export default function CustomButton({
+export default function IconLeftRight({
   text,
   onPress,
   buttonType,

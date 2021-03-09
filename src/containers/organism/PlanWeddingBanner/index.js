@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Text, View, StyleSheet, Image, ImageBackground} from 'react-native';
 import PlanBanner from '../../../assets/images/PlanWeddingBanner.png';
 import LinearGradient from 'react-native-linear-gradient';
-import PrimaryButtonSmall from '../../../components/atoms/Button/Primary';
+import IconLeftRight from '../../../components/atoms/Button/IconLeftRight';
 
 const PlanBannerUri = Image.resolveAssetSource(PlanBanner).uri;
 
@@ -24,7 +24,7 @@ class PlanWeddingBanner extends Component {
               </Text>
             </View>
             <View style={styles.button}>
-              <PrimaryButtonSmall
+              <IconLeftRight
                 text="Lets Plan"
                 padding="8"
                 // onPress={props.handleSubmit}

@@ -2,6 +2,8 @@ import React from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import Colors from '../../../../constant/Colors';
+import CustomButton from '../../../atoms/Button';
+import ButtonStyle from '../../../../constant/Buttons/index';
 // import Rating from 'react-native-ratings';
 
 const Badge = require('../../../../assets/icons/badge.png');
@@ -21,10 +23,13 @@ const ProfileCardLarge = ({
           <Text style={styles.titleText}>{name}</Text>
           {/* Button custom */}
           <View style={styles.customButton}>
-            <Text style={{marginRight: 8}}>
-              <Icon name="add" size={16} color={Colors.Primary_70} />
-            </Text>
-            <Text style={styles.buttonText}>follow</Text>
+            <CustomButton
+              text="follow"
+              buttonType={ButtonStyle.customOutlinePrimaryXSmallFlex}
+              buttonText={ButtonStyle.primaryText}
+              iconColor={ButtonStyle.primaryIcon}
+              iconLeft={'add'}
+            />
           </View>
         </View>
         {/* Button custom */}
@@ -90,14 +95,14 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   customButton: {
-    flexDirection: 'row',
-    borderWidth: 1,
-    borderRadius: 8,
-    paddingHorizontal: 8,
-    paddingVertical: 4,
-    alignItems: 'center',
-    borderColor: Colors.Primary_70,
-    // maxHeight: 24,
+    // flexDirection: 'row',
+    // borderWidth: 1,
+    // borderRadius: 8,
+    // paddingHorizontal: 8,
+    // paddingVertical: 4,
+    // alignItems: 'center',
+    // borderColor: Colors.Primary_70,
+    // height: 24,
   },
   itemContainer: {
     flexDirection: 'row',

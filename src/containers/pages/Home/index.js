@@ -8,7 +8,7 @@ import {
   Text,
   View,
 } from 'react-native';
-import PrimaryButtonSmall from '../../../components/atoms/Button/Primary';
+import IconLeftRight from '../../../components/atoms/Button/IconLeftRight';
 import {BannerCarousel} from '/Users/bagasfhr/Documents/Aplikasi/TakePick/src/components';
 import ReviewClientCard from '../../organism/ReviewClientCard';
 import RecommendationPost from '../../organism/RecommendationPost';
@@ -38,7 +38,7 @@ const Home = () => {
         <View>
           <RecommendationPost />
           <View style={styles.button}>
-            <PrimaryButtonSmall
+            <IconLeftRight
               text="View more"
               // onPress={props.handleSubmit}
               style={styles.buttonText}
