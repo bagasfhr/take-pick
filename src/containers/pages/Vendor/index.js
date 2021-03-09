@@ -4,20 +4,15 @@ import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import SpecialButtonMulecule from '../../../components/molecules/SpecialButtonMolecule';
+import ProfileVendorLarge from '../../organism/ProfileVendorLarge';
+import SpecialButtonVendor from '../../organism/SpecialButtonVendor';
 
 const VendorPage = () => {
   return (
     <ScrollView>
       <View>
-        <SpecialButtonMulecule />
-        <View
-          style={{
-            borderWidth: 0.5,
-            borderColor: 'lightgrey',
-            marginHorizontal: 16,
-          }}
-        />
+        <ProfileVendorLarge />
+        <SpecialButtonVendor />
         <View
           style={{
             marginHorizontal: 16,

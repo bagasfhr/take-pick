@@ -19,7 +19,7 @@ const VendorForYou = () => {
   return (
     <View style={styles.container}>
       <View style={styles.titleContainer}>
-        <Text style={styles.title}>Review from client</Text>
+        <Text style={styles.title}>Venue for you</Text>
         <Text style={styles.buttonText}>See all</Text>
       </View>
       <ScrollView

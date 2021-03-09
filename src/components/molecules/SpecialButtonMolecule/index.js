@@ -31,11 +31,9 @@ export default SpecialButtonMulecule;
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    marginHorizontal: 16,
-    marginVertical: 0,
-    flex: 1,
+    justifyContent: 'space-around',
+    marginVertical: 8,
     alignItems: 'center',
-    paddingVertical: 8,
   },
   image: {
     width: 32,
@@ -48,10 +46,15 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: 'Poppins-SemiBold',
     fontSize: 14,
+    lineHeight: 19.6,
+    letterSpacing: 1,
   },
   desc: {
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Roboto-Regular',
     fontSize: 12,
+    lineHeight: 16.8,
+    letterSpacing: 1,
+    marginTop: 8,
   },
   iconContainer: {
     alignItems: 'center',
