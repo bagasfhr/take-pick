@@ -1,7 +1,6 @@
 import React, {Component, useEffect, useState} from 'react';
 import {
   Dimensions,
-  Platform,
   ScrollView,
   StatusBar,
   StyleSheet,
@@ -15,6 +14,8 @@ import MenuBar from '../../organism/MenuBar';
 import PlanWeddingBanner from '../../organism/PlanWeddingBanner';
 import VendorForYou from '../../organism/VendorForYou';
 import Axios from 'axios';
+import RecommendationRoute from '../../../router/RecommendationRoute';
+import {NavigationContainer} from '@react-navigation/native';
 // import Subtitle2 from '../../utils/constant';
 
 // const images = Image.resolveAssetSource([Banner1, Banner2, Banner3]).uri;
@@ -35,6 +36,9 @@ const Home = () => {
         <BannerCarousel images={images} style={styles.banner} />
         <MenuBar />
         <PlanWeddingBanner />
+
+        {/* <RecommendationRoute /> */}
+
         <RecommendationPost />
         <ReviewClientCard />
         <VendorForYou />
@@ -47,35 +51,7 @@ export default Home;
 
 const windowHeight = Dimensions.get('window');
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#F5FCFF',
-  },
-  banner: {
-    justifyContent: 'flex-start',
-    height: windowHeight * 0.44,
-  },
-  card: {
-    flexDirection: 'column',
-    justifyContent: 'space-between',
-    marginHorizontal: 16,
-    marginVertical: 8,
-  },
-  recommendation: {
-    marginHorizontal: 16,
-    marginTop: 16,
-    fontFamily: 'Poppins-SemiBold',
-    fontSize: 14,
-    lineHeight: 19.6,
-    letterSpacing: 1,
-  },
-  button: {
-    marginHorizontal: 16,
-    marginTop: 16,
-    marginBottom: 8,
-  },
-});
+const styles = StyleSheet.create({});
 
 // const Home = () => {
 //   const [banners, setBanners] = useState([]);

@@ -21,10 +21,11 @@ const ProductCardSmall = ({
   oldPrice,
   newPrice,
   onPress,
+  card,
 }) => {
   return (
     <TouchableOpacity onPress={onPress}>
-      <View style={styles.container}>
+      <View style={card}>
         <View style={{flex: 1}}>
           <Image style={styles.image} source={{uri: avatar}} />
         </View>
@@ -72,7 +73,7 @@ export default ProductCardSmall;
 const styles = StyleSheet.create({
   container: {
     width: width / 2 - 12,
-    height: height / 2,
+    height: 306,
     marginBottom: 16,
   },
   image: {

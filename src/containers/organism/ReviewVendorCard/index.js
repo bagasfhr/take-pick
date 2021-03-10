@@ -6,7 +6,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import HeaderCard from '../../../components/molecules/HeaderCard';
 import CardSize from '../../../constant/CardSize';
 
-const ReviewClientCard = () => {
+const ReviewVendorCard = () => {
   const [reviews, setReviews] = useState([]);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const ReviewClientCard = () => {
           <HeaderCard title="Review from client" button="See all" />
         </View>
         <ScrollView
-          horizontal={true}
+          //   horizontal={true}
           scrollEventThrottle={16}
           showsHorizontalScrollIndicator={false}>
           <View style={styles.cardContainer}>
@@ -45,7 +45,7 @@ const ReviewClientCard = () => {
                   month={review.month}
                   year={review.year}
                   caption={review.caption}
-                  card={CardSize.medium}
+                  card={CardSize.large}
                 />
               );
             })}
@@ -56,7 +56,8 @@ const ReviewClientCard = () => {
   );
 };
 
-export default ReviewClientCard;
+// ['rgba(249,204,200,0.2)', 'rgba(255,255,255,1)']
+export default ReviewVendorCard;
 
 const styles = StyleSheet.create({
   linearGradient: {
@@ -68,7 +69,7 @@ const styles = StyleSheet.create({
   },
   cardContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-around',
+    alignContent: 'space-around',
     flexWrap: 'wrap',
   },
   titleContainer: {

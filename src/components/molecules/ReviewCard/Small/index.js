@@ -5,11 +5,11 @@ import CardSize from '../../../../constant/CardSize';
 
 const {height, width} = Dimensions.get('window');
 
-const ReviewSmallCard = ({avatar, name, day, month, year, caption}) => {
+const ReviewSmallCard = ({avatar, name, day, month, year, caption, card}) => {
   return (
     // Wrapper Container
     <View>
-      <View style={CardSize.medium}>
+      <View style={card}>
         <View style={{flex: 1, flexDirection: 'row'}}>
           <Image style={styles.image} source={{uri: avatar}} />
           <View style={styles.titleContainer}>

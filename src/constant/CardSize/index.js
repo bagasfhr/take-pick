@@ -24,6 +24,18 @@ const CardSize = StyleSheet.create({
     borderRadius: 8,
     padding: 8,
     marginLeft: 8,
+    marginBottom: 8,
+  },
+  productSmallHorizontal: {
+    width: width / 2 - 16,
+    height: 306,
+    // marginBottom: 16,
+    marginLeft: 8,
+  },
+  productSmallVertical: {
+    width: width / 2 - 12,
+    height: 306,
+    marginBottom: 16,
   },
 });
 

@@ -1,13 +1,11 @@
 import Axios from 'axios';
 import React, {useEffect, useState} from 'react';
 import {ScrollView, View, StyleSheet, Text} from 'react-native';
-import CustomButton from '../../../components/atoms/Button';
 import HeaderCard from '../../../components/molecules/HeaderCard';
 import ProductCardSmall from '../../../components/molecules/ProductCard/Small';
-import ButtonStyle from '../../../constant/Buttons/index';
 import CardSize from '../../../constant/CardSize';
 
-const RecommendationPost = ({navigation}) => {
+const ProductVendorCard = ({navigation}) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -22,8 +20,13 @@ const RecommendationPost = ({navigation}) => {
   };
   return (
     <View style={styles.container}>
-      <HeaderCard title="Recommendation for You" />
-      <ScrollView>
+      <View style={styles.titleContainer}>
+        <HeaderCard title="Product by this vendor" button="See all" />
+      </View>
+      <ScrollView
+        horizontal={true}
+        scrollEventThrottle={16}
+        showsHorizontalScrollIndicator={false}>
         <View style={styles.cardContainer}>
           {products.map((product) => {
             return (
@@ -37,41 +40,34 @@ const RecommendationPost = ({navigation}) => {
                 title={product.title}
                 oldPrice={product.oldPrice}
                 newPrice={product.newPrice}
-                card={CardSize.productSmallVertical}
+                card={CardSize.productSmallHorizontal}
                 // onPress={VendorPage}
               />
             );
           })}
         </View>
-        <CustomButton
-          text="See all"
-          buttonType={ButtonStyle.outlinePrimaryLargeFull}
-          buttonText={ButtonStyle.primaryText}
-          onPress={() => navigation.navigate('Vendor')}
-        />
       </ScrollView>
     </View>
   );
 };
 
-export default RecommendationPost;
+export default ProductVendorCard;
 
 const styles = StyleSheet.create({
   container: {
-    padding: 8,
+    // padding: 8,
+    paddingVertical: 8,
     backgroundColor: 'white',
+    marginBottom: 4,
+    elevation: 1,
   },
   titleContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginBottom: 16,
-    alignItems: 'center',
-    marginRight: 8,
+    paddingHorizontal: 8,
   },
   cardContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
   },
   title: {
     fontFamily: 'Poppins-SemiBold',
