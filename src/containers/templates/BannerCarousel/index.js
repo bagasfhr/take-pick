@@ -65,7 +65,6 @@ class BannerCarousel extends React.Component {
           {images.map((image) => (
             <Image
               style={styles.backgroundImage}
-              // source={require( Banner1, Banner2, Banner3)}
               source={{uri: image}}
               key={image}
             />

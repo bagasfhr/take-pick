@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, useEffect, useState} from 'react';
 import {
   Dimensions,
   Platform,
@@ -8,13 +8,13 @@ import {
   Text,
   View,
 } from 'react-native';
-import IconLeftRight from '../../../components/atoms/Button/IconLeftRight';
 import {BannerCarousel} from '/Users/bagasfhr/Documents/Aplikasi/TakePick/src/components';
 import ReviewClientCard from '../../organism/ReviewClientCard';
 import RecommendationPost from '../../organism/RecommendationPost';
 import MenuBar from '../../organism/MenuBar';
 import PlanWeddingBanner from '../../organism/PlanWeddingBanner';
 import VendorForYou from '../../organism/VendorForYou';
+import Axios from 'axios';
 // import Subtitle2 from '../../utils/constant';
 
 // const images = Image.resolveAssetSource([Banner1, Banner2, Banner3]).uri;
@@ -66,7 +66,6 @@ const styles = StyleSheet.create({
     marginHorizontal: 16,
     marginTop: 16,
     fontFamily: 'Poppins-SemiBold',
-    // fontFamily: Subtitle2,
     fontSize: 14,
     lineHeight: 19.6,
     letterSpacing: 1,
@@ -77,3 +76,39 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
 });
+
+// const Home = () => {
+//   const [banners, setBanners] = useState([]);
+
+//   useEffect(() => {
+//     getData();
+//   }, []);
+
+//   const getData = () => {
+//     Axios.get('http://10.0.2.2:3005/banners').then((res) => {
+//       console.log('res get images', res);
+//       setBanners(res.data);
+//     });
+//   };
+
+//   return (
+//     <View>
+//       <ScrollView>
+//         {banners.map((banner) => {
+//           return (
+//             <BannerCarousel
+//               images={banner.image}
+//               style={styles.banner}
+//               key={banner.id}
+//             />
+//           );
+//         })}
+//         <MenuBar />
+//         <PlanWeddingBanner />
+//         <RecommendationPost />
+//         <ReviewClientCard />
+//         <VendorForYou />
+//       </ScrollView>
+//     </View>
+//   );
+// };

@@ -46,6 +46,7 @@ const RecommendationPost = () => {
           text="See all"
           buttonType={ButtonStyle.outlinePrimaryLargeFull}
           buttonText={ButtonStyle.primaryText}
+          // onPress={}
         />
       </ScrollView>
     </View>
