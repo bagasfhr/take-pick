@@ -13,7 +13,7 @@ export default function IconLeftRight({
 }) {
   return (
     <TouchableOpacity onPress={onPress}>
-      <View style={buttonType}>
+      <View props={buttonType}>
         <Icon name={iconLeft} size={16} style={iconColor} />
         <Text style={buttonText}>{text}</Text>
         <Icon name={iconRight} size={16} style={iconColor} />
@@ -21,5 +21,3 @@ export default function IconLeftRight({
     </TouchableOpacity>
   );
 }
-
-const styles = StyleSheet.create({});

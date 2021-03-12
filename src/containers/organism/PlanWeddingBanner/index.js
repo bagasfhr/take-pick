@@ -10,7 +10,7 @@ import {
 import PlanBanner from '../../../assets/images/PlanWeddingBanner.png';
 import LinearGradient from 'react-native-linear-gradient';
 import ButtonStyle from '../../../constant/Buttons/index';
-import CustomButton from '../../../components/atoms/Button';
+import CustomButton from '../../../components/atoms/CustomButton';
 
 const PlanBannerUri = Image.resolveAssetSource(PlanBanner).uri;
 

@@ -6,8 +6,8 @@ import LocalAPI from '../../../components/molecules/LocalAPI';
 const Feeds = () => {
   return (
     <View>
-      {/* <Text>Feeds (Test page)</Text> */}
-      <LocalAPI />
+      <Text>Feeds (Test page)</Text>
+      {/* <LocalAPI /> */}
     </View>
   );
 };

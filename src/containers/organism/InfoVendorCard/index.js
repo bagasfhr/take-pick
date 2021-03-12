@@ -1,25 +1,18 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import CustomButton from '../../../components/atoms/CustomButton';
+import DescriptionCard from '../../../components/molecules/DescriptionCard';
 import HeaderCard from '../../../components/molecules/HeaderCard';
-import LocationCard from '../../../components/molecules/LocationCard';
-import ButtonStyle from '../../../constant/Buttons/index';
 
-const LocationVendorCard = () => {
+const InfoVendorCard = () => {
   return (
     <View style={styles.container}>
-      <HeaderCard title="Location" />
-      <LocationCard />
-      <CustomButton
-        text="View on map"
-        buttonType={ButtonStyle.outlinePrimaryLargeFull}
-        buttonText={ButtonStyle.primaryText}
-      />
+      <HeaderCard title="Vendor info" />
+      <DescriptionCard />
     </View>
   );
 };
 
-export default LocationVendorCard;
+export default InfoVendorCard;
 
 const styles = StyleSheet.create({
   container: {
@@ -39,5 +32,8 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-SemiBold',
     fontSize: 14,
     lineHeight: 20,
+  },
+  Button: {
+    borderRadius: 8,
   },
 });

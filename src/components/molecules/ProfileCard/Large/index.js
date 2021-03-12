@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import Colors from '../../../../constant/Colors';
-import CustomButton from '../../../atoms/Button';
+import CustomButton from '../../../atoms/CustomButton';
 import ButtonStyle from '../../../../constant/Buttons/index';
 // import Rating from 'react-native-ratings';
 

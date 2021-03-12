@@ -3,7 +3,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import DescriptionCard from '../../../components/molecules/DescriptionCard';
 import HeaderCard from '../../../components/molecules/HeaderCard';
 
-const DescriptionVendor = () => {
+const AboutVendorCard = () => {
   return (
     <View style={styles.container}>
       <HeaderCard title="About" />
@@ -12,7 +12,7 @@ const DescriptionVendor = () => {
   );
 };
 
-export default DescriptionVendor;
+export default AboutVendorCard;
 
 const styles = StyleSheet.create({
   container: {

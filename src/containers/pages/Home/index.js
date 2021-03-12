@@ -16,6 +16,7 @@ import VendorForYou from '../../organism/VendorForYou';
 import Axios from 'axios';
 import RecommendationRoute from '../../../router/RecommendationRoute';
 import {NavigationContainer} from '@react-navigation/native';
+import VendorPage from '../Vendor';
 // import Subtitle2 from '../../utils/constant';
 
 // const images = Image.resolveAssetSource([Banner1, Banner2, Banner3]).uri;
@@ -36,9 +37,7 @@ const Home = () => {
         <BannerCarousel images={images} style={styles.banner} />
         <MenuBar />
         <PlanWeddingBanner />
-
         {/* <RecommendationRoute /> */}
-
         <RecommendationPost />
         <ReviewClientCard />
         <VendorForYou />

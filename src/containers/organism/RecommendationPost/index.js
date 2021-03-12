@@ -1,13 +1,14 @@
 import Axios from 'axios';
 import React, {useEffect, useState} from 'react';
 import {ScrollView, View, StyleSheet, Text} from 'react-native';
-import CustomButton from '../../../components/atoms/Button';
+import CustomButton from '../../../components/atoms/CustomButton';
 import HeaderCard from '../../../components/molecules/HeaderCard';
 import ProductCardSmall from '../../../components/molecules/ProductCard/Small';
 import ButtonStyle from '../../../constant/Buttons/index';
 import CardSize from '../../../constant/CardSize';
+import VendorPage from '../../pages/Vendor';
 
-const RecommendationPost = ({navigation}) => {
+const RecommendationPost = ({navigation, props}) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -47,7 +48,7 @@ const RecommendationPost = ({navigation}) => {
           text="See all"
           buttonType={ButtonStyle.outlinePrimaryLargeFull}
           buttonText={ButtonStyle.primaryText}
-          onPress={() => navigation.navigate('Vendor')}
+          onPress={() => ({VendorPage})}
         />
       </ScrollView>
     </View>

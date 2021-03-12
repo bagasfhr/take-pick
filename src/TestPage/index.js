@@ -1,14 +1,13 @@
 import React from 'react';
 import {StyleSheet, Text, View, ScrollView} from 'react-native';
 import VendorPage from '../containers/pages/Vendor';
+import VendorPageRouter from '../router/VendorPageRouter';
 
 const testPage = () => {
   return (
-    <ScrollView>
-      <View>
-        <VendorPage />
-      </View>
-    </ScrollView>
+    <View>
+      <VendorPage />
+    </View>
   );
 };
 

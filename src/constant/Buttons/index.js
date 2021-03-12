@@ -232,6 +232,18 @@ const ButtonStyle = StyleSheet.create({
     borderWidth: 1,
     borderColor: Colors.Primary_70,
   },
+  outlinePrimarySmallFlexRight: {
+    padding: 8,
+    borderRadius: 8,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: 'white',
+    alignSelf: 'flex-start',
+    borderWidth: 1,
+    borderColor: Colors.Primary_70,
+    marginRight: 8,
+  },
   outlineSecondaryLargeFull: {
     padding: 16,
     borderRadius: 8,

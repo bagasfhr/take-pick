@@ -2,7 +2,14 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import {Splash, Home, Feeds, Inbox, Organized, Profile} from '../../pages';
+import {
+  Splash,
+  Home,
+  Feeds,
+  Inbox,
+  Organized,
+  Profile,
+} from '../../containers/pages';
 import {BottomNavigator} from '../../components';
 
 const Stack = createStackNavigator();
