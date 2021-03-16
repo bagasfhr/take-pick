@@ -7,10 +7,10 @@ import VendorHome from '../VendorHome';
 
 const VendorPage = () => {
   return (
-    <View>
+    <ScrollView stickyHeaderIndices={1} scrollEnabled={true}>
       <ProfileVendorLarge />
       <VendorPageRouter />
-    </View>
+    </ScrollView>
   );
 };
 

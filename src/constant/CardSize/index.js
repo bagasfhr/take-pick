@@ -1,7 +1,7 @@
 import Colors from '../Colors';
 import {StyleSheet, Dimensions} from 'react-native';
 
-const {width} = Dimensions.get('window');
+const {width, height} = Dimensions.get('window');
 
 const CardSize = StyleSheet.create({
   small: {
@@ -20,6 +20,8 @@ const CardSize = StyleSheet.create({
   },
   large: {
     width: width / 1 - 16,
+    // height: height,
+    // height: 475,
     backgroundColor: '#FEFEFE',
     borderRadius: 8,
     padding: 8,

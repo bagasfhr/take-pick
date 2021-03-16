@@ -39,9 +39,9 @@ export default ProfileVendorLarge;
 
 const styles = StyleSheet.create({
   card: {
-    elevation: 1,
+    // elevation: 1,
     // borderWidth: 1,
     backgroundColor: '#fff',
-    marginBottom: 4,
+    // marginBottom: 4,
   },
 });

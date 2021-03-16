@@ -4,11 +4,13 @@ import CustomButton from '../../../components/atoms/CustomButton';
 import FilterButton from '../../../components/molecules/FilterButton';
 import ButtonStyle from '../../../constant/Buttons';
 import Color from '../../../constant/Colors';
+import ProductVendorCardList from '../../organism/ProductVendorCardList';
 
 const VendorProduct = () => {
   return (
     <View>
       <FilterButton />
+      <ProductVendorCardList />
     </View>
   );
 };
