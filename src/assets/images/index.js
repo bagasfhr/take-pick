@@ -9,6 +9,7 @@ import Category from './Category.png';
 import Promo from './Promo.png';
 import Vendor from './Vendor.png';
 import ProductSmall from './ProductSmall.png';
+import Product from './Product.jpg';
 
 export {
   Logo,
@@ -22,4 +23,5 @@ export {
   Vendor,
   Promo,
   ProductSmall,
+  Product,
 };

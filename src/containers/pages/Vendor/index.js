@@ -7,8 +7,8 @@ import VendorHome from '../VendorHome';
 
 const VendorPage = () => {
   return (
-    <ScrollView stickyHeaderIndices={1} scrollEnabled={true}>
-      <ProfileVendorLarge />
+    <ScrollView>
+      {/* <ProfileVendorLarge /> */}
       <VendorPageRouter />
     </ScrollView>
   );

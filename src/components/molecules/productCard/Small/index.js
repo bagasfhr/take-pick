@@ -71,11 +71,6 @@ const ProductCardSmall = ({
 export default ProductCardSmall;
 
 const styles = StyleSheet.create({
-  container: {
-    width: width / 2 - 12,
-    height: 306,
-    marginBottom: 16,
-  },
   image: {
     flex: 1,
     width: null,

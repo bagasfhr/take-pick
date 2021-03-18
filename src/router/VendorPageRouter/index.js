@@ -15,13 +15,7 @@ const VendorPageRouter = () => {
   return (
     <NavigationContainer independent={true}>
       <ProfileVendorLarge />
-      <MaterialTopTabs.Navigator
-        tabBarOptions={{
-          style: {
-            // elevation: 0,
-            // borderWidth: 0,
-          },
-        }}>
+      <MaterialTopTabs.Navigator>
         <MaterialTopTabs.Screen name="Home" component={VendorHome} />
         <MaterialTopTabs.Screen name="Product" component={VendorProduct} />
         <MaterialTopTabs.Screen name="Project" component={VendorProject} />

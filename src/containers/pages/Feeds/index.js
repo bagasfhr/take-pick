@@ -1,22 +1,17 @@
 import React from 'react';
-import {StyleSheet, Text, View, Button} from 'react-native';
-import {TextInput} from 'react-native-gesture-handler';
-import LocalAPI from '../../../components/molecules/LocalAPI';
+import {StyleSheet, Text, View} from 'react-native';
+import ProductList from '../../organism/ProductList';
+import ProductContainer from '../../templates/ProductContainer';
 
 const Feeds = () => {
   return (
     <View>
-      <Text>Feeds (Test page)</Text>
-      {/* <LocalAPI /> */}
+      {/* <ProductList /> */}
+      <ProductContainer />
     </View>
   );
 };
 
 export default Feeds;
 
-const styles = StyleSheet.create({
-  input: {
-    borderWidth: 1,
-    marginBottom: 20,
-  },
-});
+const styles = StyleSheet.create({});
